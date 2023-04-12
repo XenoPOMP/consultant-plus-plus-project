@@ -15,6 +15,14 @@
     padding-bottom: .714em;
   }
 
+  &:not(:last-of-type) {
+    margin-bottom: 2.86em;
+  }
+
+  &:last-of-type {
+    margin-bottom: 22.26em;
+  }
+
   .title {
     @extend %bold;
     @extend %notSelectable;

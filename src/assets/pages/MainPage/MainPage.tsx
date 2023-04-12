@@ -24,6 +24,34 @@ const MainPage = () => {
           Китайская Народная Республика
         </SelectItem>
       </AnimatedSelect>
+
+      <AnimatedSelect title={'Кодексы РФ'}>
+        <SelectItem isSelected={false} onClick={() => {}}>
+          Уголовный кодекс
+        </SelectItem>
+      </AnimatedSelect>
+
+      <AnimatedSelect title={'Ещё что-нибудь, хз'}>
+        <SelectItem isSelected={false} onClick={() => {}}>
+          Глеб
+        </SelectItem>
+
+        <SelectItem isSelected={false} onClick={() => {}}>
+          Уйманов
+        </SelectItem>
+
+        <SelectItem isSelected={false} onClick={() => {}}>
+          Сальто
+        </SelectItem>
+
+        <SelectItem isSelected={false} onClick={() => {}}>
+          С
+        </SelectItem>
+
+        <SelectItem isSelected={false} onClick={() => {}}>
+          Места
+        </SelectItem>
+      </AnimatedSelect>
     </Page>
   );
 };
