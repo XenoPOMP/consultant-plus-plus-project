@@ -16,6 +16,26 @@ header.appHeader {
 
     width: 100%;
     justify-content: space-between;
+
+    .input {
+      @extend %flexCenter;
+
+      border-bottom: 1px solid black;
+      width: 6.28125em;
+
+      input {
+        @extend %mainFont;
+        padding: .21875em .6875em;
+        font-size: 1em;
+        outline: none;
+        border: none;
+        max-width: calc(100% - .9em);
+      }
+
+      svg {
+        width: .9em;
+      }
+    }
   }
 
   .bottomText {
