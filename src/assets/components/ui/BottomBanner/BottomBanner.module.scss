@@ -1,5 +1,9 @@
+@import "src/assets/styles/templates";
+
 .banner {
+  @extend %flexCenter;
   width: 65%;
+  aspect-ratio: 991.65 / 1934.85;
   font-size: 35px;
   // 22.25em => top
   // margin: 22.26em auto 0 auto;
