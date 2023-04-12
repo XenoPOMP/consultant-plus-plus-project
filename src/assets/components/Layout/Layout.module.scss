@@ -2,18 +2,17 @@
 
 main.appMain {
   max-width: 1526px;
-  width: calc(100vw - 100px);
+  width: calc(100vw - 5em);
   margin: 0 auto;
-  min-height: 100px;
   background: #F3F3F3;
-  border-radius: 30px;
-  padding-top: 50px;
+  border-radius: 1.5em;
+  padding-top: 2.5em;
+  font-size: 20px;
 
   .content {
     width: 100%;
     background: #FDFDFD;
     border-radius: inherit;
-    min-height: 100px;
-    padding: 75px 100px;
+    padding: 3.75em 5em;
   }
 }
