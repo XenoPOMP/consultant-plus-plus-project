@@ -1,1 +1,19 @@
 @import "src/assets/styles/templates";
+
+main.appMain {
+  max-width: 1526px;
+  width: calc(100vw - 100px);
+  margin: 0 auto;
+  min-height: 100px;
+  background: #F3F3F3;
+  border-radius: 30px;
+  padding-top: 50px;
+
+  .content {
+    width: 100%;
+    background: #FDFDFD;
+    border-radius: inherit;
+    min-height: 100px;
+    padding: 75px 100px;
+  }
+}

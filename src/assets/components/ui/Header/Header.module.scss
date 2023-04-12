@@ -1,0 +1,7 @@
+@import "src/assets/styles/templates";
+
+header.appHeader {
+  @extend %mainFont;
+  width: 100%;
+  font-size: 32px;
+}

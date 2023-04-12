@@ -1,0 +1,14 @@
+@import "src/assets/styles/templates";
+
+.logo {
+  @extend %notSelectable;
+
+  // 1em = 32px
+  font-size: 1em;
+  background: #FFF466;
+  color: black;
+  display: inline-flex;
+  padding: .1875em .875em;
+  border-radius: .46875em;
+  cursor: pointer;
+}
