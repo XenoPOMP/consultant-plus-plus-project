@@ -3,6 +3,7 @@ import styles from './MainPage.module.scss';
 import cn from 'classnames';
 import AnimatedSelect from '@components/AnimatedSelect/AnimatedSelect';
 import SelectItem from '@ui/SelectItem/SelectItem';
+import BottomBanner from '@ui/BottomBanner/BottomBanner';
 
 const MainPage = () => {
   return (
@@ -52,6 +53,8 @@ const MainPage = () => {
           Места
         </SelectItem>
       </AnimatedSelect>
+
+      <BottomBanner />
     </Page>
   );
 };
