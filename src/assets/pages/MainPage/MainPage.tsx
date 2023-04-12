@@ -7,7 +7,7 @@ import SelectItem from '@ui/SelectItem/SelectItem';
 const MainPage = () => {
   return (
     <Page meta={{ pageTitle: 'Main', pageDescription: '', keywords: '' }}>
-      <AnimatedSelect>
+      <AnimatedSelect title={'Конституции'}>
         <SelectItem isSelected={false} onClick={() => {}}>
           Российская Федерация
         </SelectItem>

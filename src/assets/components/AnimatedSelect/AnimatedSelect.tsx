@@ -5,7 +5,7 @@ import { AnimatedSelectProps } from './AnimatedSelect.props';
 import useBoolean from '@hooks/useBoolean';
 import { motion } from 'framer-motion';
 
-const AnimatedSelect: FC<AnimatedSelectProps> = ({ children }) => {
+const AnimatedSelect: FC<AnimatedSelectProps> = ({ title, children }) => {
   const [expanded, toggleExpanded] = useBoolean(false);
 
   return (
@@ -22,7 +22,7 @@ const AnimatedSelect: FC<AnimatedSelectProps> = ({ children }) => {
       className={cn(styles.select)}
     >
       <div className={cn(styles.title)} onClick={toggleExpanded}>
-        Конституции
+        {title}
       </div>
 
       <motion.div
