@@ -2,6 +2,42 @@
 
 header.appHeader {
   @extend %mainFont;
+  @extend %flexCenter;
+
   width: 100%;
   font-size: 32px;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 1em;
+  margin-bottom: 1.8125em;
+
+  .navbar {
+    @extend %flexCenter;
+
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .bottomText {
+    @extend %flexCenter;
+
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    column-gap: 5.25em;
+
+    .text {
+      @extend %mainFont;
+      @extend %bold;
+
+      color: black;
+      font-size: 1.875em;
+    }
+
+    .saulPlaceholder {
+      @extend %flexCenter;
+      width: 16.03125em;
+      aspect-ratio: 1;
+    }
+  }
 }
