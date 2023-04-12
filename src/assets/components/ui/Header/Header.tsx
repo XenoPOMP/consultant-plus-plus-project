@@ -4,7 +4,7 @@ import styles from './Header.module.scss';
 import { HeaderProps } from './Header.props';
 import Logo from '@ui/Logo/Logo';
 import ProgressiveImage from '@ui/ProgressiveImage/ProgressiveImage';
-import saulImg from '@media/images/soul_consultant.png';
+import saulImg from '@media/images/consultant_4x.jpg';
 
 const Header: FC<HeaderProps> = ({}) => {
   return (

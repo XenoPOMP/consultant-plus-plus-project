@@ -38,6 +38,11 @@ header.appHeader {
       @extend %flexCenter;
       width: 16.03125em;
       aspect-ratio: 1;
+
+      img {
+        width: inherit;
+        aspect-ratio: inherit;
+      }
     }
   }
 }

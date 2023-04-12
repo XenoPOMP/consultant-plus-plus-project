@@ -1,0 +1,56 @@
+@import "src/assets/styles/templates";
+
+.select {
+  @extend %mainFont;
+
+  font-size: 35px;
+  background: black;
+  border-radius: .857em;
+  width: 65.5%;
+  margin: 0 auto;
+  padding-bottom: .714em;
+  overflow: hidden;
+
+  &:has(> .itemGroup) {
+    padding-bottom: .714em;
+  }
+
+  .title {
+    @extend %bold;
+    @extend %notSelectable;
+
+    color: white;
+    padding: .286em 0;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .itemGroup {
+    background: white;
+    border-radius: inherit;
+    border: 1px solid black;
+    overflow: hidden;
+
+    .item {
+      @extend %notSelectable;
+
+      font-size: 1em;
+      color: black;
+      border-radius: .829em;
+      border: 2px solid transparent;
+      padding: .485em 0;
+      text-align: center;
+      cursor: pointer;
+      transition:
+              background .1s ease,
+              color .1s ease,
+              border-color .1s ease;
+
+      &:hover {
+        background: #FFF466;
+        color: #FF2F3A;
+        border-color: black;
+      }
+    }
+  }
+}
