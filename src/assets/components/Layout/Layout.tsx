@@ -4,6 +4,7 @@ import GlobalProvider from '@providers/GlobalProvider/GlobalProvider';
 import Header from '@ui/Header/Header';
 import styles from './Layout.module.scss';
 import cn from 'classnames';
+import Footer from '@ui/Footer/Footer';
 
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
@@ -14,6 +15,8 @@ const Layout: FC<LayoutProps> = ({ children }) => {
 
           {children}
         </div>
+
+        <Footer />
       </main>
     </GlobalProvider>
   );

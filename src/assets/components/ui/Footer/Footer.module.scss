@@ -1,0 +1,13 @@
+@import "src/assets/styles/templates";
+
+footer.appFooter {
+  @extend %mainFont;
+  @extend %flexCenter;
+
+  // 1em = 40px
+  font-size: 2em;
+  background: #FFF466;
+  color: black;
+  border-radius: 0 0 .75em .75em;
+  padding: 4.2em 0;
+}
