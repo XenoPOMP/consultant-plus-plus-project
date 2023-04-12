@@ -21,9 +21,21 @@ const AnimatedSelect: FC<AnimatedSelectProps> = ({ title, children }) => {
       }}
       className={cn(styles.select)}
     >
-      <div className={cn(styles.title)} onClick={toggleExpanded}>
+      <motion.div
+        initial={{
+          padding: expanded ? '.286em 0' : '.657em 0',
+        }}
+        animate={{
+          padding: expanded ? '.286em 0' : '.657em 0',
+        }}
+        transition={{
+          duration: 0.3,
+        }}
+        className={cn(styles.title)}
+        onClick={toggleExpanded}
+      >
         {title}
-      </div>
+      </motion.div>
 
       <motion.div
         initial={{
