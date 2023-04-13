@@ -10,6 +10,19 @@
   // margin: 0 auto 14.28em auto;
   margin: 0 auto 26.04vw auto;
 
+  @media (max-width: 1256px) {
+    width: 80%;
+  }
+
+  @media (max-width: 960px) {
+    // font-size: 32px;
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 25px;
+  }
+
   img {
     width: 100%;
   }

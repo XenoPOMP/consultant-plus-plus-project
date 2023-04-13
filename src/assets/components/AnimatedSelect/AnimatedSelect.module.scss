@@ -11,6 +11,31 @@
   padding-bottom: .714em;
   overflow: hidden;
 
+  @media (max-width: 1256px) {
+    width: 80%;
+  }
+
+  @media (max-width: 960px) {
+    font-size: 32px;
+    width: 100%;
+  }
+
+  @media (max-width: 688px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 558px) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 447px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 343px) {
+    font-size: 20px;
+  }
+
   &:has(> .itemGroup) {
     padding-bottom: .714em;
   }
@@ -43,7 +68,7 @@
       color: black;
       border-radius: .829em;
       border: 2px solid transparent;
-      padding: .485em 0;
+      padding: .485em .5em;
       text-align: center;
       cursor: pointer;
       transition:
