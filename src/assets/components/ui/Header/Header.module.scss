@@ -10,18 +10,73 @@ header.appHeader {
   flex-direction: column;
   row-gap: 1em;
   margin-bottom: 1.8125em;
+  position: relative;
+
+  @media (max-width: 1568px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 1334px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 882px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 504px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 452px) {
+    font-size: 12px;
+  }
+
+  & > .saulPlaceholder {
+    @extend %flexCenter;
+    // width: 16.03125em;
+    aspect-ratio: 1;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    opacity: .5;
+
+    img {
+      height: inherit;
+      aspect-ratio: inherit;
+    }
+
+    @media (max-width: 1115px) {
+      opacity: .25;
+    }
+
+    @media (max-width: 882px) {
+      opacity: .1;
+    }
+  }
 
   .navbar {
     @extend %flexCenter;
 
     width: 100%;
     justify-content: space-between;
+    z-index: 1;
 
     .input {
       @extend %flexCenter;
 
       border-bottom: 1px solid black;
       width: 6.28125em;
+
+      @media (max-width: 600px) {
+        border-bottom: none;
+      }
 
       input {
         @extend %mainFont;
@@ -45,6 +100,7 @@ header.appHeader {
     align-items: end;
     width: 100%;
     column-gap: 5.25em;
+    position: relative;
 
     .text {
       @extend %mainFont;
@@ -52,12 +108,21 @@ header.appHeader {
 
       color: black;
       font-size: 1.875em;
+
+      @media (max-width: 1408px) {
+        width: 75%;
+      }
+
+      @media (max-width: 1115px) {
+        width: 100%;
+      }
     }
 
     .saulPlaceholder {
       @extend %flexCenter;
       width: 16.03125em;
       aspect-ratio: 1;
+      position: relative;
 
       img {
         width: inherit;

@@ -5,10 +5,23 @@ import { HeaderProps } from './Header.props';
 import Logo from '@ui/Logo/Logo';
 import ProgressiveImage from '@ui/ProgressiveImage/ProgressiveImage';
 import saulImg from '@media/images/consultant_4x.jpg';
+import MediaWidthView from '@ui/mediaQueries/MediaWidthView/MediaWidthView';
 
 const Header: FC<HeaderProps> = ({}) => {
   return (
     <header className={cn(styles.appHeader)}>
+      <MediaWidthView maxWidth={1408}>
+        <div className={cn(styles.saulPlaceholder)}>
+          <ProgressiveImage
+            loaderColorScheme={{
+              backgroundColor: 'transparent',
+              loaderColor: 'black',
+            }}
+            src={saulImg}
+          />
+        </div>
+      </MediaWidthView>
+
       <div className={cn(styles.navbar)}>
         <Logo />
 
@@ -48,15 +61,17 @@ const Header: FC<HeaderProps> = ({}) => {
           права?
         </div>
 
-        <div className={cn(styles.saulPlaceholder)}>
-          <ProgressiveImage
-            loaderColorScheme={{
-              backgroundColor: 'transparent',
-              loaderColor: 'black',
-            }}
-            src={saulImg}
-          />
-        </div>
+        <MediaWidthView minWidth={1409}>
+          <div className={cn(styles.saulPlaceholder)}>
+            <ProgressiveImage
+              loaderColorScheme={{
+                backgroundColor: 'transparent',
+                loaderColor: 'black',
+              }}
+              src={saulImg}
+            />
+          </div>
+        </MediaWidthView>
       </div>
     </header>
   );

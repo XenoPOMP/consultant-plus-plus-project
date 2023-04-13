@@ -4,4 +4,8 @@ body {
   background: #BDBDBD;
   padding: 100px 0;
   // 100 197
+
+  @media (max-width: 948px) {
+    padding: 60px 0;
+  }
 }
